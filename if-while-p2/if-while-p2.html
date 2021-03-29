@@ -1,0 +1,25 @@
+<script>
+
+    const start = 1
+    const end = 9
+    let item = start
+    
+    document.write(`<ul>`)
+
+    while ( item < end ) {
+        
+        if ( item === start ) {
+            document.write( `<li>:first-child</li>` )
+        } 
+
+        item++
+        document.write(`<li>:nth-child(${item})</li>`)
+        
+        if ( item === end ) {
+            document.write(`<li> :last-child</li>`)
+        }
+    }
+
+    document.write(`</ul>`)
+
+</script>
